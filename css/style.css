@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'AlegreyaSansSC';
+    src: url("../font/AlegreyaSansSC-Regular.ttf");
+ }
+
+*{
+    font-family: 'AlegreyaSansSC', sans-serif;
+    font-size: 1em;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*  CABEÇALHO E MENU DE NAVEGAÇÃO SUPERIOR - INICIO */
+#cabecalho{
+    margin:auto;
+    width:100%;
+    height:15vh;
+    background-color: #fff;
+    position:fixed;
+    top:0px;
+    z-index: 1;
+}
+#cabecalho .topo-principal{
+    box-shadow: 0px 0px 26px -7px rgb(168, 166, 166);
+    background-color: #fff;
+    margin:auto;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#cabecalho .topo-principal h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.topo-principal .lista{
+    width:70%;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.topo-principal .lista ul{
+    list-style: none;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.topo-principal .lista ul li a{
+    text-decoration: none;
+   padding:10px 45px; 
+   color:rgb(54, 53, 53);
+   border:2px solid rgba(255, 255, 255, 0);
+}
+
+.topo-principal .lista ul li a:hover{
+  background-color: rgba(120, 120, 120, 0.109);
+  border-radius:4px 0;
+  border-bottom:2px solid rgba(54, 54, 54, 0.466);
+  text-decoration: none;
+}
+.topo-principal .nome{
+    height:100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*  CABEÇALHO E MENU DE NAVEGAÇÃO SUPERIOR - INICIO */
+
+
+/*  CONTAINER DE CONTEÚDO PRINCIPAL - INICIO */
+
+#conteudo{
+    width:100%;
+    background-image: url("../img/bg-texture.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    margin-top:15px;
+    background-color: #fff;
+}
+.quebra{
+    width:100%;
+    height:150px;
+    display:flex;
+    align-items:center;
+    background-color: rgb(255, 255, 255);
+    
+}
+.quebra hr{
+    width:100%;
+   
+    
+}
+.box-section{
+    /*padding:150px 5px 0 0;*/
+    height:100vh;
+}
+#perfil{
+    display:flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+#perfil .home-perfil{
+    width:94%;
+    height:95%;
+    margin:auto;
+    display:flex;
+    background-image: url("../img/bg-note-bc.jpeg");
+    background-size: cover;
+    box-shadow: 0px 0px 26px -7px rgb(168, 166, 166);
+}
+.home-perfil .item-perfil{
+    width:50%;
+    padding:2%;
+}
+.home-perfil .conteudo{
+    height:75vh;
+    color:#000;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+}
+.home-perfil .conteudo h2{
+    margin-bottom:2%;
+    font-size: 2em;
+    box-shadow: 0px 0px 26px -20px rgba(120,120,120,1);
+    width:100%;
+}.home-perfil .conteudo h2:hover{
+    box-shadow: 0px 0px 26px -1px rgb(189, 188, 188);
+    transition: 0.5s;
+}
+.home-perfil .conteudo  p{
+    padding:5%;
+    margin-bottom:2%;
+    font-size: 1.3em;
+    box-shadow: 0px 0px 26px -20px rgba(120,120,120,1);
+    width:100%;
+   
+}.home-perfil .conteudo p:hover{
+    box-shadow: 0px 0px 26px -1px rgb(189, 188, 188);
+    transition: 0.5s;
+}
+.home-perfil .foto .avatar{
+    width:350px;
+    height:350px;    
+    border:1px solid #a0a0a0;
+    background-image: url("../img/eu.jpg");
+    background-size: cover;
+    border-radius:50%;
+}
+.home-perfil .foto .avatar:hover{
+    border:1px solid #202897;    
+}
+
+/* SECTION PERFIL - FINAL */
+
+/* SECTION HOBBIES - INICIO */
+
+#hobbies{    
+    background-image: url("../img/bg-texture.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+}
+#portifolio{   
+    background-color: #fff; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#portifolio .home-portifolio{
+    width:94%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.home-portifolio .projetos{
+    margin:1%;
+    width:30%;  
+    opacity:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;    
+}
+.home-portifolio .projetos:hover{
+    opacity:0.8;
+    transition: 0.5s;    
+}
+.home-portifolio .proj-01{
+    background-image: url("../img/projet-01.webp");
+    background-size: cover;
+}
+.home-portifolio .proj-02{
+    background-image: url("../img/project-02.jpg");
+    background-size: cover;
+}
+.home-portifolio .proj-03{
+    background-image: url("../img/project-03.jpg");
+    background-size: cover;
+}
+.home-portifolio .proj-04{
+    background-image: url("../img/project-04.jpg");
+    background-size: cover;
+}
+.home-portifolio .proj-05{
+    background-image: url("../img/project-05.jpg");
+    background-size: cover;
+}
+.home-portifolio .proj-06{
+    background-image: url("../img/project-06.jpg");
+    background-size: cover;
+}
+.home-portifolio .projetos h2{
+    font-size: 1.2em;
+    color:#fff;
+    padding:1%;
+    width:100%;
+    text-align: center;
+    height:10vh;
+    background-color: rgba(0, 0, 0, 0.767);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-portifolio .projetos h2:hover{
+   
+}
+#expertise{    
+    background-color: #fff;   
+    background-image: url("../img/dream.jpg");
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    
+}
+#expertise .home-expertise{
+    width:94%;
+    height:100%;
+    margin:auto;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+#contato{   
+    background-color: rgba(0, 0, 0, 0.808);   
+    display:flex;
+    flex-direction: column;
+      
+}
+#contato .home-contato{
+    width:85%;
+    height:100%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+    
+}
+.home-contato .sociais{
+    height:45%;
+}
+
+.home-contato .mensagem{
+    height:40%;
+}
+
+
+
+/*  CONTAINER DE CONTEÚDO PRINCIPAL - INICIO */
+
+footer{
+    height:40vh;
+    background-color: rgb(22, 22, 22); 
+}
