@@ -14,62 +14,33 @@ html {
     scroll-behavior: smooth;
 }
 /*  CABEÇALHO E MENU DE NAVEGAÇÃO SUPERIOR - INICIO */
-#cabecalho{
-    margin:auto;
+.cabecalho {
+    position: fixed;
+    top:0;
     width:100%;
-    height:15vh;
     background-color: #fff;
-    position:fixed;
-    top:0px;
-    z-index: 1;
-}
-#cabecalho .topo-principal{
     box-shadow: 0px 0px 26px -7px rgb(168, 166, 166);
-    background-color: #fff;
-    margin:auto;
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    
 }
-#cabecalho .topo-principal h1{
-    font-size: 2.5em;
-    font-weight: bold;
+.cabecalho #nome{
+    text-align: center;
+    padding:1%;
+    
 }
-.topo-principal .lista{
-    width:70%;
-    height:100px;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-}
-.topo-principal .lista ul{
-    list-style: none;
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-}
-.topo-principal .lista ul li a{
-    text-decoration: none;
-   padding:10px 45px; 
-   color:rgb(54, 53, 53);
-   border:2px solid rgba(255, 255, 255, 0);
-}
+.cabecalho #nome h1{
+    font-size: 2.2em;
+     
+ }
+ .menu{
+     display:flex;
+     justify-content: center;
+ }
+ .menu li{
+    padding:0 50px;
+     
+ }
 
-.topo-principal .lista ul li a:hover{
-  background-color: rgba(120, 120, 120, 0.109);
-  border-radius:4px 0;
-  border-bottom:2px solid rgba(54, 54, 54, 0.466);
-  text-decoration: none;
-}
-.topo-principal .nome{
-    height:100px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 /*  CABEÇALHO E MENU DE NAVEGAÇÃO SUPERIOR - INICIO */
 
 
@@ -82,10 +53,11 @@ html {
     background-attachment: fixed;
     margin-top:15px;
     background-color: #fff;
+    z-index: 1;
 }
 .quebra{
     width:100%;
-    height:150px;
+    height:137px;
     display:flex;
     align-items:center;
     background-color: rgb(255, 255, 255);
@@ -258,7 +230,7 @@ html {
       
 }
 #contato .home-contato{
-    width:85%;
+    width:55%;
     height:100%;
     margin:auto;
     display:flex;
@@ -281,4 +253,23 @@ html {
 footer{
     height:40vh;
     background-color: rgb(22, 22, 22); 
+}
+
+/* #####  Querie até 567  ############ */
+
+@media (max-width:567px){
+    .home-perfil .foto .avatar{
+        width:50px;
+        height:50px;    
+      
+        
+    }
+    .cabecalho #nome h1{
+       font-size: 1.3em;
+        
+    }
+    
+
+    
+
 }
