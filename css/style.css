@@ -15,6 +15,7 @@ html {
 }
 /*  CABEÇALHO E MENU DE NAVEGAÇÃO SUPERIOR - INICIO */
 .cabecalho {
+    z-index: 1;
     position: fixed;
     top:0;
     width:100%;
@@ -140,7 +141,26 @@ html {
     background-attachment: fixed;
     display:flex;
     flex-direction: column;
+    align-items: center;
+    
 }
+.home-hobbies{    
+    width:80vw;
+    height:80vh;
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.473);
+    justify-content: center;
+    margin:1%;
+}
+
+.home-hobbies img{
+    width:80vw;
+    height:80vh;
+}
+
+
+
+
 #portifolio{   
     background-color: #fff; 
     display:flex;
@@ -230,7 +250,7 @@ html {
       
 }
 #contato .home-contato{
-    width:55%;
+    width:25%;
     height:100%;
     margin:auto;
     display:flex;
@@ -240,11 +260,59 @@ html {
 }
 .home-contato .sociais{
     height:45%;
+    display:flex;
+    align-items: flex-end;
+    
+}
+
+.sociais ul{
+    
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    
+}
+.sociais li{
+    width:58px;
+    height:58px;
+    
+    
+}
+.sociais ul li a{
+    width:50px;
+    height:50px;
+    
+    
 }
 
 .home-contato .mensagem{
-    height:40%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center
 }
+a i {
+    color:#fff;
+}
+a i.git:hover{
+    color:rgb(243, 175, 112);
+    transition: 400ms;
+}
+a i.link:hover{
+    color:#007bff;
+    transition: 400ms;
+}
+a i.whats:hover{
+    color:rgb(8, 185, 37);
+    transition: 400ms;
+}
+a i.mail:hover{
+    color:rgb(250, 58, 58);
+    transition: 400ms;
+}
+
 
 
 
@@ -257,17 +325,69 @@ footer{
 
 /* #####  Querie até 567  ############ */
 
-@media (max-width:567px){
+@media (max-width:992px){
+    
+    #perfil{
+        
+    }
+    
+    #perfil .home-perfil{
+        display:block;
+       
+        
+       
+    }
+    .home-perfil .item-perfil{
+        width:100%;
+        padding:2%;
+    }
+    
     .home-perfil .foto .avatar{
-        width:50px;
-        height:50px;    
+        width:80px;
+        height:80px;    
       
         
+    }
+    .home-perfil .conteudo p{
+        font-size: 1.1em;
     }
     .cabecalho #nome h1{
        font-size: 1.3em;
         
     }
+    #hobbies{    
+        background-image: none;
+        background-color:#fff;
+      
+    }
+    .home-hobbies{    
+        
+        width:100vw;
+        height:80vh;
+        
+    }
+    
+    .home-hobbies img{
+        width:100vw;
+        height:80vh;
+    }
+    .quebra{
+       
+        height:100px;
+        
+        
+    }
+
+    #contato .home-contato{
+        width:90%;
+        height:100%;
+        margin:auto;
+        display:flex;
+        flex-direction: column;
+        align-content: space-between;
+        
+    }
+  
     
 
     
