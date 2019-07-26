@@ -58,7 +58,7 @@ html {
 }
 .quebra{
     width:100%;
-    height:145px;
+    height:8vh;
     display:flex;
     align-items:center;
     background-color: rgb(255, 255, 255);
@@ -68,9 +68,12 @@ html {
 }
 .quebra hr{
     width:100%;
-   
-    
 }
+
+.quebra-perfil{
+    background-color: #e3e3e3;
+}
+
 .box-section{
     /*padding:150px 5px 0 0;*/
     min-height:100vh;
@@ -80,15 +83,16 @@ html {
     display:flex;
     flex-direction: column;
     background-color: #fff;
+    background-image: url("../img/bg-note-bc.jpeg");
+    background-size: cover;
 }
 #perfil .home-perfil{
-    width:94%;
+    width:100%;
     min-height: 80vh;
     margin:auto;
     display:flex;
-    background-image: url("../img/bg-note-bc.jpeg");
-    background-size: cover;
-    box-shadow: 0px 0px 26px -7px rgb(168, 166, 166);
+  
+    
    
 }
 .home-perfil .item-perfil{
@@ -116,7 +120,7 @@ html {
     padding:5%;
     margin-bottom:2%;
     font-size: 1.3em;
-    box-shadow: 0px 0px 26px -20px rgba(120,120,120,1);
+    /* box-shadow: 0px 0px 26px -20px rgba(120,120,120,1); */
     width:100%;
     text-align: justify;
    
@@ -158,30 +162,34 @@ html {
 /* SECTION HOBBIES - INICIO */
 
 #hobbies{    
-    background-image: url("../img/bg-texture.jpg");
+  /*   background-image: url("../img/bg-texture.jpg");
     background-size:cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: #fff;
     display:flex;
     flex-direction: column;
     align-items: center;
     
 }
 .home-hobbies{    
-    width:80vw;
-    height: 80vh;
+    width:90vw;
+    height: 92vh;
     display:flex;
-    background-color: rgba(0, 0, 0, 0.473);
+    /* background-color: rgba(0, 0, 0, 0.473); */
     background-size: cover;
     justify-content: center;
-    margin:1%;
+    /* margin:1%; */
     text-shadow: #000;
 }
 
 .home-hobbies img{
-    width:80vw;
-    height: 80vh;
+    width:90vw;
+    height: 92vh;
     background-size: cover;
 }
+
+
+
 .carrossel-texto{
     background-color: rgba(0, 0, 0, 0.561);
     z-index: 0;
@@ -197,9 +205,9 @@ html {
     justify-content: space-between;
     align-items: center;
 }
-#portifolio .home-portifolio{
-    width:94%;
-    height: 80vh;
+.home-portifolio{
+    width:90vw;
+    height: 92vh;
     display:flex;
     justify-content: center;
     align-items: stretch;
@@ -272,8 +280,8 @@ html {
     
 }
 #expertise .home-expertise{
-    width:94%;
-    height:80vh;   
+    width:90vw;
+    height: 92vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -339,9 +347,9 @@ meter::-webkit-meter-even-less-good-value {
       
 }
 
-#contato .home-contato{
-    width:80%;
-    min-height: 80vh;
+.home-contato{
+    width:100%;
+    height: 92vh;
     background-color: rgba(0, 0, 0, 0.363);
     display:flex;
     align-items: center;
@@ -440,7 +448,7 @@ meter::-webkit-meter-even-less-good-value {
    
     width:50%;
     height:70%;
-    background-color: #18b93b;
+    background-color: #18b339;
     border:1px;
     border-style:solid; 
     border-color: #11a531;
@@ -454,8 +462,8 @@ meter::-webkit-meter-even-less-good-value {
     background-color: #18b93b ;
     border:1px;
     border-style:solid;    
-    border-color:#6ce987 #6ce987 #034111 #6ce987;
-    box-shadow: 1px 10px 25px 0px rgba(56, 56, 56, 0.74);
+    border-color:#6ce987 #18b93b #0d501d #18b93b;
+    box-shadow: 1px 10px 25px -15px rgba(56, 56, 56, 0.74);
    
 }
 
