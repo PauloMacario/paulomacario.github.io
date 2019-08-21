@@ -154,14 +154,23 @@ footer{
     width:400px;
 }
 
-.about-title{
-    font-weight: bold;
-}
-
 .box-about p{
     font-size: 1.2em;
     display:block;
 }
+.box-about h2{
+    font-size: 2.2em;
+    display:block;
+}
+
+.about-info .row{
+    margin-bottom:40px;
+}
+
+.about-title{
+    font-weight: bold;
+}
+
 .bio{
     padding-left:80px;
 }
@@ -221,6 +230,10 @@ footer{
     }
     .bio{
         padding-left:15px;
+    }
+
+    .about-info .row{
+        margin-bottom:10px;
     }
    
         
