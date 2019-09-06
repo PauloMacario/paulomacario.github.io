@@ -284,7 +284,7 @@ footer{
 .work-content, .academy-content{
     width:45%;
     min-height:30vh;
-    border:1px solid black;
+   /*  border:1px solid black; */
     padding:1%;
  }
 
