@@ -173,7 +173,11 @@ footer{
 }
 
 .bio{
-    padding-left:80px;
+    padding-left:10px;
+}
+
+.img-carroussel{
+    height:100vh;
 }
 
 
@@ -292,10 +296,27 @@ footer{
 
 
 .work-box-left, .academy-box-left{
-    text-align: right;   
+    text-align: right; 
+    padding:4%;
+    border-bottom:1px solid rgba(172, 9, 9, 0.856);  
 }
+
 .work-box-right, .academy-box-right{
     text-align: left;
+    padding:4%;
+    border-bottom:1px solid rgba(172, 9, 9, 0.856);
+}
+
+
+.icon-pessoa{
+    color:#fff;
+    border:1px solid rgba(172, 9, 9, 0.856);
+    border-radius:50%;
+    background-color:rgba(172, 9, 9, 0.856); 
+    width:60px;
+    height:60px; 
+    padding:14px;
+   
 }
 
 

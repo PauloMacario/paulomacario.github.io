@@ -21,6 +21,11 @@
     <link href="fontawesome/css/brands.css" rel="stylesheet">
     <link href="fontawesome/css/solid.css" rel="stylesheet"> 
       <script src="https://kit.fontawesome.com/45d5ad2021.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
 </head>
 
 <body>
@@ -93,57 +98,39 @@
 
                     <div class="col-md-12 col-lg-5 about-info mt-5 ">
 
-                        <div class="row">
-                            <div class="col-4 col-md-4 ">
-                                <p class="about-title">Nome:</p>
-                            </div>
+                        <table class="table table-borderless">
+                            
+                            <tbody>
+                              <tr>
+                                <th><i class="fas fa-user fa-2x icon-pessoa"></i></th>
+                                <td><p>Paulo Macario de Lima Martins</p></td>
+                               
+                              </tr>
+                              <tr>
+                                <th><i class="fas fa-birthday-cake fa-2x icon-pessoa"></i></th>
+                                <td><p>32 Anos</p></td>
+                               
+                              </tr>
+                              <tr>
+                                <th><i class="fas fa-envelope fa-2x icon-pessoa"></i></th>
+                                <td><p>paulomacario14<span>@gmail.com</span></p></td>                               
+                              </tr>
+                              <tr>
+                                <th><i class="fas fa-phone-alt fa-2x icon-pessoa"></i></th>
+                                <td><p>(11) 97800-5680  - (11) 3984-1060</p></td>                               
+                              </tr>
+                              <tr>
+                                <th><i class="fas fa-map-marked-alt fa-2x icon-pessoa"></i></th>
+                                <td><p>Av Dep. Cantidio Sampaio, 2849 - Parque Belém - SP</p>                                    
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
 
-                            <div class="col-8 col-md-8">
-                                <p>Paulo Macario de Lima Martins</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4 col-md-4">
-                                <p class="about-title">Idade:</p>
-                            </div>
-
-                            <div class="col-8 col-md-8">
-                                <p>32 anos</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4 col-md-4">
-                                <p class="about-title">Celular:</p>
-                            </div>
-
-                            <div class="col-8 col-md-8">
-                                <p>+55 11 989654321</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4 col-md-4">
-                                <p class="about-title">E-mail:</p>
-                            </div>
-
-                            <div class="col-8 col-md-8">
-                                <p> paulomacario14 @gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4 col-md-4">
-                                <p class="about-title">Endereço:</p>
-                            </div>
-
-                            <div class="col-8 col-md-8">
-                                <p>Av Deputado Cantidio Sampaio, 2846
-                                    CEP 02850-105 - Prq Belem - São Paulo / SP</p>
-                            </div>
-
-                        </div>
                     </div>
 
                     <div class="col-md-12 col-lg-7 bio mt-4 ">
-                        <h2 class="mb-5">Olá</h2>
+                       
                         <p class="text-justify">Meu nome é Paulo e através deste, site currículo, venho apresentar
                             algumas das habilidades que venho aprimorando
                             nessa nova estrada que é o desenvolvimento Web. </p>
@@ -269,26 +256,38 @@
                             <!-- <i class="fas fa-briefcase work-icon fa-2x"></i> -->
                             <div class="academy-content academy-box-left">
                                 <div class="academy-item-head">
-                                    <h4>Nível Superior - Redes de Computadores</h4>
-                                    <h5>Uninove -2012</h5>
+                                    <h4>Curso Técnico - Desenvolvimento Web Full Stack</h4>
+                                    <h5>Digital House - 2019</h5>
                                 </div>
                                 <div class="academy-item-body">
-                                   <p>Curso focado em tecnologias de redes de comunicações, dados e telefonia
+                                   <p>Curso de desenvolvimento de sistemas Web, grade curricular composta pelas principais tecnologias do mundo web, Html5, Css3, JavaScript, Php, MySql, Framework Laravel e metodologias ágeis de projetos.
 </p>
                                 </div>
                             </div>
                         </li>
+                       
                         <li class="academy-item-right academy-icone-right">
                            
                             <div class="academy-content academy-box-right">
                                 <div class="academy-item-head">
-                                    <h4>pppp mmmm</h4>
-                                    <h5>Autônomo</h5>
+                                    <h4>Curso Técnico - CCNA Routing and Switching</h4>
+                                    <h5>Senac -2016</h5>
                                 </div>
                                 <div class="academy-item-body">
-                                    <p>Lorem ipsum, dolor sit amet consectetur consectetur nsectetur consectet nsectetur
-                                        consectet nsectetur consectetconsectetur consectetur consectetur consectetur
-                                        consecteturadipisicing elit. Maxime repudiandae cumque natus, .</p>
+                                    <p>Curso focado na certificação técnica CCNA Cisco, fabricante referência no seguimento de equipamentos para comunicação de dados.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="academy-item-left academy-icone-left">
+                            <!-- <i class="fas fa-briefcase work-icon fa-2x"></i> -->
+                            <div class="academy-content academy-box-left">
+                                <div class="academy-item-head">
+                                    <h4>Nível Superior - Redes de Computadores</h4>
+                                    <h5>Uninove - 2012</h5>
+                                </div>
+                                <div class="academy-item-body">
+                                   <p>Curso de Tecnologia em Redes de Computadores, abordando principais temas da infra-estrutura física e lógica das redes de comunicações, seus protocolos, tecnologias, aplicações e normas em geral.
+</p>
                                 </div>
                             </div>
                         </li>
@@ -306,14 +305,7 @@
 
 
 
-        <!--  ==============  Section  ( Start ) ================ -->
-        <section class="container-fluid">
-            Serviços<br>
-            area de desenvolvimento<br>
-            area de infra<br>
-        </section>
-        <!--  ==============   ( End ) ================ -->
-
+       
         <!--  ==============   ( Start ) ================ -->
         <section class="container-fluid">
             Habilidades<br>
@@ -331,8 +323,28 @@
 
         <!--  ==============   ( Start ) ================ -->
         <section class="container-fluid">
-            Hobbies<br>
-            lazer estudo etc...<br>
+            <div class="container">
+                <div class="col-12 text-center mb-5">
+                    <span>
+                        <h2>Meus Hobbies.</h2>
+                    </span>
+                </div>
+                <div class="col-12 text-center mb-5">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/programar.jpeg" class="d-block w-100 img-carroussel" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/programar.jpeg" class="d-block w-100 img-carroussel" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/programar.jpeg" class="d-block w-100 img-carroussel" alt="...">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </section>
         <!--  ==============   ( End ) ================ -->
 
