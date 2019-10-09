@@ -261,13 +261,31 @@ footer{
 }
 
 .icon-pessoa{
+    padding:10px;
     color:#fff;
-    border:1px solid rgba(172, 9, 9, 0.856);
+  
+}
+
+.info-pessoa{
+    margin:0;
+    padding:0;
+    height: 100%;
+
+}
+
+.table th{
+    border:1px solid rgba(172, 9, 9, 0.856); 
     border-radius:50%;
+    margin-bottom: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color:rgba(172, 9, 9, 0.856); 
-    width:60px;
-    height:60px; 
-    padding:14px;
+}
+.table td{
+    margin-bottom: 15px;
+    vertical-align: middle;
+ 
 }
 
 
@@ -383,7 +401,7 @@ footer{
     .box-home h1{
         font-size: 1.8em;
         color:#fff;
-        font-family: 'Kaushan Script', cursive;
+        font-family: 'Kaushan', cursive;
     }
     
     .box-home h3{

@@ -10,20 +10,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    
+        
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">    
     
     
     <link rel="stylesheet" href="css/style.css">
 
-    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    
      
 
 </head>
@@ -93,25 +88,25 @@
                             <tbody>
                               <tr>
                                 <th><i class="fas fa-user fa-2x icon-pessoa"></i></th>
-                                <td><p>Paulo Macario de Lima Martins</p></td>
+                                <td><p class="info-pessoa">Paulo Macario de Lima Martins</p></td>
                                
                               </tr>
                               <tr>
                                 <th><i class="fas fa-birthday-cake fa-2x icon-pessoa"></i></th>
-                                <td><p>32 Anos</p></td>
+                                <td><p class="info-pessoa">32 Anos</p></td>
                                
                               </tr>
                               <tr>
                                 <th><i class="fas fa-envelope fa-2x icon-pessoa"></i></th>
-                                <td><p>paulomacario14<span>@gmail.com</span></p></td>                               
+                                <td><p class="info-pessoa">paulomacario14<span>@gmail.com</span></p></td>                               
                               </tr>
                               <tr>
                                 <th><i class="fas fa-phone-alt fa-2x icon-pessoa"></i></th>
-                                <td><p>(11) 97800-5680  - (11) 3984-1060</p></td>                               
+                                <td><p class="info-pessoa">(11) 97800-5680  - (11) 3984-1060</p></td>                               
                               </tr>
                               <tr>
                                 <th><i class="fas fa-map-marker fa-2x icon-pessoa"></i></th>
-                                <td><p>Av Dep. Cantidio Sampaio, 2849 - Parque Belém - SP</p>                                    
+                                <td><p class="info-pessoa">Av Dep. Cantidio Sampaio, 2849 - Parque Belém - SP</p>                                    
                                 </td>
                               </tr>
                             </tbody>
@@ -349,7 +344,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 
 
         <script>
@@ -393,20 +390,21 @@
             var $target = $('.animated');
             var opacidade = 'opacity';
             var animationClass = 'fadeIn';
-            var duracao = 'delay-1s'
-            offset = $(window).height() * 3/4;
+            var duracao = 'delay-400ms'
+            var offset = $(window).height() * 3/4;
             
 
             function animaScroll(){
                 var documentTop = $(document).scrollTop();
+                console.log(documentTop);
                 $target.each(function(){
                    
                     var itemTop = $(this).offset().top;
                     if(documentTop > itemTop - offset){
-                        $(this).addClass(animationClass, opacidade);
-                    }else{
+                        $(this).addClass(animationClass);   //
+                    }/* else{
                         $(this).removeClass(animationClass);
-                    }
+                    } */
                 })
             }
             animaScroll();
