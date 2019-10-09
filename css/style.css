@@ -140,6 +140,9 @@ footer{
 .about-info .row{
     margin-bottom:40px;
 }
+.about-info{
+    opacity:0;
+}
 
 .about-title{
     font-weight: bold;
@@ -147,6 +150,7 @@ footer{
 
 .bio{
     padding-left:10px;
+    opacity:0;
 }
 
 .img-carroussel{
@@ -270,6 +274,8 @@ footer{
     margin:0;
     padding:0;
     height: 100%;
+    word-break: break-all;
+   
 
 }
 
