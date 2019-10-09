@@ -1,48 +1,37 @@
-﻿/* 
- */
+﻿@font-face{
+    font-family:Kaushan;
+    src:url(../fonts/KaushanScript-Regular.ttf);
+}
 
-
- /* font-family: 'Permanent Marker', cursive;
-font-family: 'Courgette', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Gloria Hallelujah', cursive;
-font-family: 'Bad Script', cursive;
-font-family: 'Jura', sans-serif;
-font-family: 'Share Tech Mono', monospace; */
-
-
-
+@font-face{
+    font-family:Jura;
+    src:url(../fonts/Jura-Bold.ttf);
+}
 /* ==========  Reset  ( Start ) ==========   */
 * {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
-   
 }
+
+
 html{
     scroll-behavior: smooth;
 }
+
+body{
+    font-family:Jura;
+}
+
 ul{
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color:rgb(255, 255, 255);
 }
-/* ==========  Reset  ( End ) ==========   */
-
-
-/* ==========  ( start ) ==========   */
-/* ==========  ( End ) ==========   */
-
-
-/* ==========  ( start ) ==========   */
-/* ==========  ( End ) ==========   */
-
-
-
-/* ========== Site Structure ( start ) ==========   */
 
 section{
     border:1px solid black;                      /* REMOVER MARCAÇÂO DEPOIS DE FINALIZAR*/
@@ -50,16 +39,11 @@ section{
     width:100vw;
 }
 
-
-
 footer{
     border:1px solid rgb(16, 44, 138);
     height:20vh;
     width:100vw;
 }
-
-/* ========== Site Structure ( End ) ==========   */
-
 
 /* ========== Section home ( Start ) ==========   */
 #home{
@@ -82,19 +66,17 @@ footer{
 .box-home h1{
     font-size: 2.8em;
     color:#fff;
-    font-family: 'Kaushan Script', cursive;
+    font-family: Kaushan, cursive;
     transform: rotate(-5deg); 
 }
 
 .box-home h3{
     font-size: 1.5em;
     color:#fff;
-    font-family: 'Jura', sans-serif;
+    font-family:Jura, sans-serif;
 }
 
-.box-avatar{
-    
-}
+
 .avatar{
     width:200px;
     height:200px;
@@ -105,22 +87,10 @@ footer{
     background-repeat: no-repeat;
 }
 
-.name{
-    
-}
-
-.name h1{
-   
-}
-
-.title{
-    
-}
-
-.social{
-    
+.social{    
     width:300px;
 }
+
 .social ul{
     display:flex;
     justify-content: space-evenly;    
@@ -128,7 +98,8 @@ footer{
 
 .social ul li a{
     color:#fff;
-} 
+}
+
 .social ul li a:hover{
     color:rgb(233, 233, 233);
 } 
@@ -148,9 +119,8 @@ footer{
     width: 90%;
     display:flex;
     align-items: flex-start;
-    
-    
 }
+
 .box-title{
     width:400px;
 }
@@ -159,9 +129,12 @@ footer{
     font-size: 1.2em;
     display:block;
 }
+
 .box-about h2{
     font-size: 2.2em;
     display:block;
+    
+
 }
 
 .about-info .row{
@@ -180,22 +153,8 @@ footer{
     height:100vh;
 }
 
-
-
-
-
-
-
-
-
-
 /* ========== Section work ( Start ) ==========   */
 
-
-
-
-
-/* ========== Section about ( End ) ==========   */
 #work{
     border:none;
     display:flex;
@@ -212,14 +171,8 @@ footer{
     display:flex;
     justify-content:center;
     align-items: center;  
-   
     color:rgba(172, 9, 9, 0.712);
-   
-   
-   
-   
-
-}
+ }
 
 .work-title h2, .academy-title h2 { 
     background-color: rgb(255, 255, 255);
@@ -227,7 +180,6 @@ footer{
     border:1px solid rgba(172, 9, 9, 0.712);
     border-radius:5px;
 }
-
 
 .time-line::before{
     content: ' ';
@@ -238,10 +190,7 @@ footer{
     position:absolute;
     left:50%;
     margin-bottom:10px;
-   
-    
 }
-
 
 .work-item-left::after, .work-item-right::after{
     content: ' ';
@@ -276,13 +225,20 @@ footer{
     min-height:30vh;
     display:flex;
     justify-content: flex-start;
+    opacity:0;
+    
+}
+
+.opacity{
+    opacity:1;
+   
 }
 
 .work-item-right, .academy-item-right{
     min-height:30vh;
     display:flex;
     justify-content: flex-end;
-    
+    opacity:0;
 } 
 
 .work-content, .academy-content{
@@ -290,10 +246,7 @@ footer{
     min-height:30vh;
    /*  border:1px solid black; */
     padding:1%;
- }
-
-
-
+}
 
 .work-box-left, .academy-box-left{
     text-align: right; 
@@ -307,7 +260,6 @@ footer{
     border-bottom:1px solid rgba(172, 9, 9, 0.856);
 }
 
-
 .icon-pessoa{
     color:#fff;
     border:1px solid rgba(172, 9, 9, 0.856);
@@ -316,27 +268,12 @@ footer{
     width:60px;
     height:60px; 
     padding:14px;
-   
 }
 
 
 
 
-
-
-
 /* ========== Section about ( End ) ==========   */
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Media query */
