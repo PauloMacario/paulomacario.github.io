@@ -47,15 +47,27 @@ footer{
 
 /* ========== Section home ( Start ) ==========   */
 #home{
-    background-color: rgba(172, 9, 9, 0.856);
+    background-image: url("../img/work.jpg");
+    background-size: cover;  
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
     border:none;
 }
+
+.home-filter{
+    width:100%;
+    height: 100%;
+    background-color: rgba(75, 57, 57, 0.445); 
+}
+
 .box-home{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height:100vh;
+    
 
 }
 
@@ -97,20 +109,22 @@ footer{
 }
 
 .social ul li a{
-    color:#fff;
+    color:rgb(226, 226, 226);
 }
 
 .social ul li a:hover{
-    color:rgb(233, 233, 233);
+    color:rgb(255, 255, 255);
 } 
 /* ========== Section home ( End ) ==========   */
 
 
 /* ========== Section about ( Start ) ==========   */
 #about{
+    color:rgba(78, 67, 67, 0.657);
     border:none;
     display:flex;
     justify-content: center;
+
 }
 .box-about{
     padding-top:10vh;
@@ -131,7 +145,8 @@ footer{
 }
 
 .box-about h2{
-    font-size: 2.2em;
+    font-weight: bold;
+    font-size: 2.8em;
     display:block;
     
 
@@ -140,9 +155,6 @@ footer{
 .about-info .row{
     margin-bottom:40px;
 }
-.about-info{
-    opacity:0;
-}
 
 .about-title{
     font-weight: bold;
@@ -150,7 +162,7 @@ footer{
 
 .bio{
     padding-left:10px;
-    opacity:0;
+   
 }
 
 .img-carroussel{
@@ -229,23 +241,21 @@ footer{
     min-height:30vh;
     display:flex;
     justify-content: flex-start;
-    opacity:0;
+
     
 }
 
-.opacity{
-    opacity:1;
-   
-}
+
 
 .work-item-right, .academy-item-right{
     min-height:30vh;
     display:flex;
     justify-content: flex-end;
-    opacity:0;
+
 } 
 
 .work-content, .academy-content{
+    color:rgba(65, 61, 61, 0.657);
     width:45%;
     min-height:30vh;
    /*  border:1px solid black; */
@@ -271,6 +281,7 @@ footer{
 }
 
 .info-pessoa{
+    color:rgba(78, 67, 67, 0.657);
     margin:0;
     padding:0;
     height: 100%;
@@ -366,7 +377,10 @@ footer{
 
 
   @media screen and (max-width:700px) {
-   
+    #home{
+        background-image: none;
+        background-color: #e00707f8;
+    }
 
 
 }
@@ -418,6 +432,10 @@ footer{
 
     .box-home .row{
         margin-bottom: 4%;
+    }
+
+    .title{
+        font-size: 18px;
     }
 
     
