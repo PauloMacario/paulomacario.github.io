@@ -34,7 +34,7 @@ a{
 }
 
 section{
-    border:1px solid black;                      /* REMOVER MARCAÇÂO DEPOIS DE FINALIZAR*/
+                       /* REMOVER MARCAÇÂO DEPOIS DE FINALIZAR*/
     min-height:100vh;
     width:100vw;
 }
@@ -58,7 +58,7 @@ footer{
 .home-filter{
     width:100%;
     height: 100%;
-    background-color: rgba(75, 57, 57, 0.445); 
+    background-color: rgba(0, 0, 0, 0.609); 
 }
 
 .box-home{
@@ -115,6 +115,19 @@ footer{
 .social ul li a:hover{
     color:rgb(255, 255, 255);
 } 
+
+#btn-more a{
+    font-size: 1.3rem;
+    padding:10px 40px;
+    border:solid 2px #fff;
+    border-radius:0;
+    background-color: rgba(0, 0, 0, 0.376);
+}
+
+#btn-more a:hover{
+    background-color: rgba(255, 255, 255, 0.52);
+}
+
 /* ========== Section home ( End ) ==========   */
 
 
@@ -126,7 +139,7 @@ footer{
     justify-content: center;
 
 }
-.box-about{
+.box-about {
     padding-top:10vh;
     padding-bottom:10vh;
     min-height:100vh;
@@ -144,13 +157,13 @@ footer{
     display:block;
 }
 
-.box-about h2{
+.box-about h2, .box-portifolio h2{
+    color:rgba(78, 67, 67, 0.657);
     font-weight: bold;
     font-size: 2.8em;
     display:block;
-    
-
 }
+
 
 .about-info .row{
     margin-bottom:40px;
@@ -167,6 +180,12 @@ footer{
 
 .img-carroussel{
     height:100vh;
+}
+
+.box-portifolio{
+    padding-top:10vh;
+    min-height:100vh;
+   
 }
 
 /* ========== Section work ( Start ) ==========   */
@@ -241,11 +260,7 @@ footer{
     min-height:30vh;
     display:flex;
     justify-content: flex-start;
-
-    
 }
-
-
 
 .work-item-right, .academy-item-right{
     min-height:30vh;
@@ -264,13 +279,13 @@ footer{
 
 .work-box-left, .academy-box-left{
     text-align: right; 
-    padding:4%;
+    padding:2% 4%;
     border-bottom:1px solid rgba(172, 9, 9, 0.856);  
 }
 
 .work-box-right, .academy-box-right{
     text-align: left;
-    padding:4%;
+    padding:2% 4%;
     border-bottom:1px solid rgba(172, 9, 9, 0.856);
 }
 
@@ -308,7 +323,61 @@ footer{
 
 
 
-/* ========== Section about ( End ) ==========   */
+/* ========== Section Work ( End ) ==========   */
+
+
+/* ========== Section Portifólio ( Start ) ==========   */
+
+.card-portifolio{
+    height: 250px;
+    margin:1% 0;
+    border:1px solid rgba(56, 52, 52, 0.164);
+    border-radius:3px;
+    cursor:pointer;
+    transition: 300ms;
+    /* border:1px solid red; */
+    display:flex;
+}
+
+.card-portifolio:hover{
+    box-shadow: 0px 0px 12px -6px rgba(0,0,0,0.75);
+    transition: 300ms;
+}
+
+.card-img{
+    width:40%;    
+    height: 100%;
+    transition: 300ms;
+    border-radius:0;
+
+}
+
+.card-img img{
+    width:100%;
+    height: 100%;
+    transition: 300ms;
+    filter:opacity(85%);
+}
+
+.card-img img:hover{
+   background-color: rgba(0, 0, 0, 0.198);
+   filter:opacity(100%);
+   transition: 300ms;
+}
+
+.card-content{
+    width:60%;
+    background-color:  rgba(233, 233, 233, 0.164);
+    height: 100%;
+    border-radius:0;
+}
+
+
+
+/* ========== Section Portifólio ( end ) ==========   */
+
+
+
 
 
 /* Media query */
@@ -376,12 +445,34 @@ footer{
 }
 
 
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:767px) {
     #home{
         background-image: none;
-        background-color: #e00707f8;
+        background-color: #b82d2d;
     }
 
+    .home-filter{
+      
+        background-color:rgba(255, 255, 255, 0); 
+    }
+
+    .card-portifolio{
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .card-img{
+        width:70%;
+        height: 100%;
+    
+    }
+    
+    .card-content{
+        width:70%;
+        height: 100%;
+    }
 
 }
 
