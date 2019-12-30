@@ -483,22 +483,18 @@ footer{
         
     }
     .work-item-left::after, .work-item-right::after{
-        left:0%;
-        margin-left:0px;
+       display:none;
     }
     
     .academy-item-right::after, .academy-item-left::after{
-        left:0%;
-        margin-left:0px;
+       display:none;
     }      
     .work-box-left, .academy-box-left{
-        text-align: center;  
-        margin-left:70px;
+       display:none;
 
     }
     .work-box-right, .academy-box-right{
-        text-align: center;
-        margin-left:70px;
+       display:none;
 
     }
 
