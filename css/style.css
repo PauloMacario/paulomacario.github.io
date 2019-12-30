@@ -389,7 +389,7 @@ footer{
         }
 
         .time-line::before{          
-            left:50px;
+             display:none;
             
         }
         .work-item-left, .academy-item-left{
@@ -418,13 +418,11 @@ footer{
 
 
         .work-item-left::after, .work-item-right::after{
-            left:0%;
-            margin-left:17px;
+            display:none;
         }
         
         .academy-item-right::after, .academy-item-left::after{
-            left:0%;
-            margin-left:17px;
+            display:none;
         }      
 
     }
