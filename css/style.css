@@ -479,7 +479,7 @@ footer{
   @media screen and (max-width: 540px){
 
     .time-line::before{          
-        left:32px;
+        display:none;
         
     }
     .work-item-left::after, .work-item-right::after{
