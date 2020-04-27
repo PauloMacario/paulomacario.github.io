@@ -111,14 +111,28 @@ footer{
     border:none;
     display:flex;
     justify-content: center;
+    background-image: url("../img/bbb.jpg");
+    background-size: 100% 100%;
+    padding:130px 20px 70px 20px;
+    
+   
 }
 .box-about{
-    padding-top:10vh;
-    padding-bottom:10vh;
-    min-height:100vh;
-    width: 90%;
+   
+    min-height:80vh;
+    width: 100vw;
     display:flex;
     align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 4px;
+   
+}
+
+.about-content{
+    width: 100%;
+    min-height:80vh;
+    padding:20px 0px;
+    margin:0;
 }
 
 .box-title{
@@ -126,7 +140,7 @@ footer{
 }
 
 .box-about p{
-    font-size: 1.2em;
+    font-size: 1.1em;
     display:block;
 }
 
@@ -146,7 +160,7 @@ footer{
 }
 
 .bio{
-    padding-left:10px;
+    padding:10px;
 }
 
 .img-carroussel{
@@ -155,125 +169,52 @@ footer{
 
 /* ========== Section work ( Start ) ==========   */
 
-#work{
-    border:none;
-    display:flex;
-    justify-content: center;
+#developer{
+    background-color: blue;
+    height:50vh;
+    width:100vw;
 }
-#work .row{
-   display: block;
+
+#support{
+    background-color: rgb(59, 59, 139);
+    height:50vh;
+    width:100vw;
 }
-.box-work{
+
+#developer-cover{
+    background-color: rgb(101, 101, 139);
     width:100%;
-
-}
-.work-title , .academy-title { 
-    display:flex;
-    justify-content:center;
-    align-items: center;  
-    color:rgba(172, 9, 9, 0.712);
- }
-
-.work-title h2, .academy-title h2 { 
-    background-color: rgb(255, 255, 255);
-    padding:1% 2%;
-    border:1px solid rgba(172, 9, 9, 0.712);
-    border-radius:5px;
-}
-
-.time-line::before{
-    content: ' ';
-    
-    height:97%;
-    width:2px;
-    background-color: rgba(172, 9, 9, 0.589);
-    position:absolute;
-    left:50%;
-    margin-bottom:10px;
-}
-
-.work-item-left::after, .work-item-right::after{
-    content: ' ';
-    height:70px;
-    width:70px;
-    border-radius:50%;   
-    position:absolute;
-    left:50%;
-    margin-left:-32px;
-    margin-top:2%;
-    background-image: url('../img/work.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.academy-item-right::after, .academy-item-left::after{
-    content: ' ';
-    height:70px;
-    width:70px;
-    border-radius:50%;  
-    position:absolute;
-    left:50%;
-    margin-left:-32px;
-    margin-top:2%;
-    background-image: url('../img/academy.png');
-    background-size: cover;
-    background-repeat: no-repeat;    
-}
-
-.work-item-left, .academy-item-left{
-    min-height:30vh;
-    display:flex;
-    justify-content: flex-start;
-    opacity:0;
-    
-}
-
-.opacity{
-    opacity:1;
    
 }
 
-.work-item-right, .academy-item-right{
-    min-height:30vh;
-    display:flex;
-    justify-content: flex-end;
-    opacity:0;
-} 
-
-.work-content, .academy-content{
-    width:45%;
-    min-height:30vh;
-   /*  border:1px solid black; */
-    padding:1%;
+#developer-content{
+    background-color: rgb(59, 59, 139);
+   
 }
 
-.work-box-left, .academy-box-left{
-    text-align: right; 
-    padding:4%;
-    border-bottom:1px solid rgba(172, 9, 9, 0.856);  
+#support-cover{
+    background-color: rgb(95, 95, 253);
+  
+   
 }
 
-.work-box-right, .academy-box-right{
-    text-align: left;
-    padding:4%;
-    border-bottom:1px solid rgba(172, 9, 9, 0.856);
+#support-content{
+    background-color: rgb(8, 8, 29);
+   
 }
 
-.icon-pessoa{
-    color:#fff;
-    border:1px solid rgba(172, 9, 9, 0.856);
-    border-radius:50%;
-    background-color:rgba(172, 9, 9, 0.856); 
-    width:60px;
-    height:60px; 
-    padding:14px;
+/* ========== Section work ( End ) ==========   */
+
+
+
+/* ========== Section Contato ( Start ) ==========   */
+.contato{
+    height:60vh;
+
 }
 
+/* ========== Section Contato ( End ) ==========   */
 
-
-
-/* ========== Section about ( End ) ==========   */
 
 
 /* Media query */
