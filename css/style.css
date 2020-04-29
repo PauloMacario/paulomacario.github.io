@@ -34,21 +34,21 @@ a{
 }
 
 section{
-                       /* REMOVER MARCAÇÂO DEPOIS DE FINALIZAR*/
-    min-height:100vh;
+                     
+   
     width:100vw;
 }
 
 footer{
-    border:1px solid rgb(16, 44, 138);
-    height:20vh;
-    width:100vw;
+  
+   
 }
 
 /* ========== Section home ( Start ) ==========   */
 #home{
-    background-image: url("../img/work.jpg");
-    background-size: cover;  
+    /* background-image: url("../img/work.jpg"); */
+    background-color: rgba(139, 1, 1, 0.829);
+   /*  background-size: cover;   */
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
@@ -58,7 +58,7 @@ footer{
 .home-filter{
     width:100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.609); 
+  
 }
 
 .box-home{
@@ -133,11 +133,10 @@ footer{
 
 /* ========== Section about ( Start ) ==========   */
 #about{
-    color:rgba(78, 67, 67, 0.657);
+   
     border:none;
     display:flex;
     justify-content: center;
-<<<<<<< HEAD
     background-image: url("../img/bbb.jpg");
     background-size: 100% 100%;
     padding:130px 20px 70px 20px;
@@ -147,16 +146,7 @@ footer{
 .box-about{
    
     min-height:80vh;
-    width: 100vw;
-=======
-
-}
-.box-about {
-    padding-top:10vh;
-    padding-bottom:10vh;
-    min-height:100vh;
-    width: 90%;
->>>>>>> bcf35736ffb4bb55922a48b1d7b9aeb77e5ca160
+    width: 80vw;
     display:flex;
     align-items: flex-start;
     background-color: rgba(255, 255, 255, 0.397);
@@ -197,12 +187,7 @@ footer{
 }
 
 .bio{
-<<<<<<< HEAD
     padding:10px;
-=======
-    padding-left:10px;
-   
->>>>>>> bcf35736ffb4bb55922a48b1d7b9aeb77e5ca160
 }
 
 .img-carroussel{
@@ -218,118 +203,49 @@ footer{
 /* ========== Section work ( Start ) ==========   */
 
 #developer{
-    background-color: blue;
+    /* background-color: rgb(59, 59, 139); */
     height:50vh;
     width:100vw;
 }
 
 #support{
-    background-color: rgb(59, 59, 139);
+    /* background-color: blue; */
     height:50vh;
     width:100vw;
 }
 
 #developer-cover{
-    background-color: rgb(101, 101, 139);
-    width:100%;
+   /*  background-color: rgb(101, 101, 139); */
+  
+   background-image: url("../img/note.jpg");
+   background-size: cover;
+   
    
 }
 
 #developer-content{
-    background-color: rgb(59, 59, 139);
+   /*  background-color: rgb(59, 59, 139); */
+   border-bottom: 2px solid rgba(136, 82, 1, 0.774);
    
 }
 
-<<<<<<< HEAD
 #support-cover{
-    background-color: rgb(95, 95, 253);
+   /*  background-color: rgb(95, 95, 253); */
+   background-image: url("../img/infra.jpg");
+   background-size: cover;
+
   
    
 }
 
 #support-content{
-    background-color: rgb(8, 8, 29);
+   /*  background-color: rgb(8, 8, 29); */
+   border-bottom: 2px solid rgba(17, 17, 131, 0.774);
    
 }
 
 /* ========== Section work ( End ) ==========   */
 
-
-
-/* ========== Section Contato ( Start ) ==========   */
-.contato{
-    height:60vh;
-
-=======
-.work-item-left, .academy-item-left{
-    min-height:30vh;
-    display:flex;
-    justify-content: flex-start;
-}
-
-.work-item-right, .academy-item-right{
-    min-height:30vh;
-    display:flex;
-    justify-content: flex-end;
-
-} 
-
-.work-content, .academy-content{
-    color:rgba(65, 61, 61, 0.657);
-    width:45%;
-    min-height:30vh;
-   /*  border:1px solid black; */
-    padding:1%;
-}
-
-.work-box-left, .academy-box-left{
-    text-align: right; 
-    padding:2% 4%;
-    border-bottom:1px solid rgba(172, 9, 9, 0.856);  
-}
-
-.work-box-right, .academy-box-right{
-    text-align: left;
-    padding:2% 4%;
-    border-bottom:1px solid rgba(172, 9, 9, 0.856);
-}
-
-.icon-pessoa{
-    padding:10px;
-    color:#fff;
-  
-}
-
-.info-pessoa{
-    color:rgba(78, 67, 67, 0.657);
-    margin:0;
-    padding:0;
-    height: 100%;
-    word-break: break-all;
-   
-
-}
-
-.table th{
-    border:1px solid rgba(172, 9, 9, 0.856); 
-    border-radius:50%;
-    margin-bottom: 15px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color:rgba(172, 9, 9, 0.856); 
->>>>>>> bcf35736ffb4bb55922a48b1d7b9aeb77e5ca160
-}
-.table td{
-    margin-bottom: 15px;
-    vertical-align: middle;
- 
-}
-
-
-
-
-/* ========== Section Work ( End ) ==========   */
 
 
 /* ========== Section Portifólio ( Start ) ==========   */
@@ -380,19 +296,35 @@ footer{
 
 
 
-<<<<<<< HEAD
+/* ========== Section Contato ( Start ) ==========   */
+
+#contato{
+    background-color:  rgba(184, 172, 255, 0.164);
+    margin-top:40px;
+    padding:20px;
+    height:70vh;
+}
+
+#form-contato{
+    height:370px;
+    width:600px;
+}
+
 /* ========== Section Contato ( End ) ==========   */
 
 
+/* ========== Section Rodapé ( Start ) ==========   */
+#rodape{
+    background-color: rgba(139, 1, 1, 0.829);
+    height:30vh;
+    width:100vw;
+}
 
-=======
-/* ========== Section Portifólio ( end ) ==========   */
 
 
+/* ========== Section Rodapé ( End ) ==========   */
 
 
-
->>>>>>> bcf35736ffb4bb55922a48b1d7b9aeb77e5ca160
 /* Media query */
 
 /*
