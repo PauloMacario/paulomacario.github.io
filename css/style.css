@@ -15,6 +15,20 @@
     box-sizing: border-box;
 }
 
+figure{
+    padding: 0;
+    margin: 0;
+}
+
+article{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    padding:0;
+    margin:0;
+}
 
 html{
     scroll-behavior: smooth;
@@ -33,16 +47,12 @@ a{
     color:rgb(255, 255, 255);
 }
 
-section{
-                     
-   
-    width:100vw;
+.row{
+    padding:0;
+    margin:0;
+
 }
 
-footer{
-  
-   
-}
 
 /* ========== Section home ( Start ) ==========   */
 #home{
@@ -144,13 +154,14 @@ footer{
    
 }
 .box-about{
+    padding:30px 0px;
    
-    min-height:80vh;
+ /*    min-height:80vh;
     width: 80vw;
     display:flex;
     align-items: flex-start;
     background-color: rgba(255, 255, 255, 0.397);
-    border-radius: 4px;
+    border-radius: 4px; */
    
 }
 
@@ -203,45 +214,39 @@ footer{
 /* ========== Section work ( Start ) ==========   */
 
 #developer{
-    /* background-color: rgb(59, 59, 139); */
-    height:50vh;
-    width:100vw;
+  
+    width:100%;
 }
 
 #support{
-    /* background-color: blue; */
-    height:50vh;
-    width:100vw;
+
+    width:100%;
 }
 
 #developer-cover{
-   /*  background-color: rgb(101, 101, 139); */
   
-   background-image: url("../img/note.jpg");
-   background-size: cover;
-   
    
 }
 
 #developer-content{
-   /*  background-color: rgb(59, 59, 139); */
-   border-bottom: 2px solid rgba(136, 82, 1, 0.774);
+
    
 }
 
 #support-cover{
-   /*  background-color: rgb(95, 95, 253); */
-   background-image: url("../img/infra.jpg");
-   background-size: cover;
+   
 
+}
+
+#support-content{
   
    
 }
 
-#support-content{
-   /*  background-color: rgb(8, 8, 29); */
-   border-bottom: 2px solid rgba(17, 17, 131, 0.774);
-   
+.article-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 /* ========== Section work ( End ) ==========   */
@@ -317,7 +322,7 @@ footer{
 #rodape{
     background-color: rgba(139, 1, 1, 0.829);
     height:30vh;
-    width:100vw;
+   
 }
 
 
