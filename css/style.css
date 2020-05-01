@@ -155,7 +155,7 @@ a{
 }
 .box-about{
     
-   
+    width: 100%;
  /*    min-height:80vh;
     width: 80vw;
     display:flex;
