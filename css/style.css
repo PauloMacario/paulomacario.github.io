@@ -349,7 +349,7 @@ a{
 
 #form-contato{
     height:400px;
-    width:500px;
+    max-width:500px;
     padding:30px;
     border-radius:4px;
     
